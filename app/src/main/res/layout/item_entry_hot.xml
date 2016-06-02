@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="90.0dip"
+    android:background="#ffffffff"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <View
+        style="@style/Divider"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="?android:selectableItemBackground" />
+
+    <ImageView
+        android:id="@+id/screenshot"
+        android:layout_width="60.0dip"
+        android:layout_height="60.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="15.0dip"
+        android:layout_marginTop="10.0dip"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12.0dip"
+        android:layout_toLeftOf="@id/screenshot"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lineSpacingMultiplier="1.1"
+        android:maxLines="2"
+        android:minHeight="32.0dip"
+        android:paddingLeft="15.0dip"
+        android:textColor="?titleColor"
+        android:textSize="17.0sp" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/title"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginRight="15.0dip"
+        android:layout_marginTop="2.0dip"
+        android:layout_toLeftOf="@id/screenshot"
+        android:layout_toRightOf="@+id/ic_recommend"
+        android:maxHeight="30.0dip">
+
+        <ImageView
+            android:id="@+id/view_img"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="15.0dip"
+            android:src="@drawable/ic_view" />
+
+        <TextView
+            android:id="@+id/view_count"
+            style="@style/hot_new_card_footer"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_toRightOf="@id/view_img"
+            android:gravity="center_vertical" />
+
+        <ImageView
+            android:id="@+id/action_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5.0dip"
+            android:layout_toRightOf="@id/view_count"
+            android:src="@drawable/ic_collection" />
+
+        <TextView
+            android:id="@+id/collect_count"
+            style="@style/hot_new_card_footer"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2.0dip"
+            android:layout_toRightOf="@id/action_collect"
+            android:gravity="center_vertical" />
+
+        <ImageView
+            android:id="@+id/home_hot"
+            android:layout_width="15.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10.0dip"
+            android:layout_toRightOf="@id/collect_count"
+            android:scaleType="centerInside"
+            android:src="@drawable/home_hot" />
+
+        <TextView
+            android:id="@+id/editor_name"
+            style="@style/hot_new_card_footer"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2.0dip"
+            android:layout_toRightOf="@id/home_hot"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxWidth="120.0dip"
+            android:singleLine="true"
+            android:text="NeXT___" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@id/ic_recommend"
+        android:layout_width="53.329987dip"
+        android:layout_height="18.0dip"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginTop="2.0dip"
+        android:src="@drawable/ic_recommend"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.30000007dip"
+        android:background="@color/main_list_color" />
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_feidian"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:drawableLeft="@drawable/feidian_icon"
+        android:drawablePadding="3.0dip"
+        android:gravity="center_vertical"
+        android:text="沸点"
+        android:textColor="@color/juejin_orange"
+        android:textSize="10.0sp" />
+
+    <TextView
+        android:id="@+id/editor_name"
+        style="@style/hot_new_card_footer"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@id/tv_feidian"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxWidth="120.0dip"
+        android:singleLine="true"
+        android:text="江江" />
+
+    <TextView
+        style="@style/hot_new_card_footer"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10.0dip"
+        android:layout_toRightOf="@id/editor_name"
+        android:gravity="center_vertical"
+        android:text="beijingtime" />
+
+    <ImageView
+        android:id="@+id/view_img"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_toLeftOf="@+id/view_count"
+        android:src="@drawable/ic_view" />
+
+    <TextView
+        android:id="@id/view_count"
+        style="@style/hot_new_card_footer"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="2.0dip"
+        android:layout_marginRight="5.0dip"
+        android:layout_toLeftOf="@id/action_collect"
+        android:gravity="center_vertical" />
+
+    <ImageView
+        android:id="@+id/action_collect"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_toLeftOf="@id/collect_count"
+        android:src="@drawable/ic_collection" />
+
+    <TextView
+        android:id="@+id/collect_count"
+        style="@style/hot_new_card_footer"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="2.0dip"
+        android:gravity="center_vertical" />
+</RelativeLayout>

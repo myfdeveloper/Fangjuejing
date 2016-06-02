@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="60.0dip"
+    android:background="@color/white"
+    android:foreground="?selectableItemBackground">
+
+    <View
+        style="@style/Divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:alpha="0.15"
+        android:background="#ff000000" />
+
+    <ImageView
+        android:id="@+id/iv_category_icon"
+        android:layout_width="38.0dip"
+        android:layout_height="38.0dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/tv_card_title"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="16.0dip"
+        android:layout_toRightOf="@id/iv_category_icon"
+        android:layout_weight="1.0"
+        android:gravity="center_vertical"
+        android:textColor="#ff000000"
+        android:textSize="18.0sp" />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/iv_menu"
+        android:gravity="center"
+        android:paddingRight="12.0dip" />
+
+    <ImageView
+        android:id="@id/iv_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/view"
+        android:background="?android:selectableItemBackground"
+        android:src="@drawable/ic_action_navigation_more_vert" />
+
+    <View
+        android:id="@id/view"
+        android:layout_width="12.0dip"
+        android:layout_height="1.0dip"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>

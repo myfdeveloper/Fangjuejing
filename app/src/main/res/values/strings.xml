@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">仿掘金</string>
+    <string name="action_personal_setting">设置</string>
+    <string name="attention_tip">点击下方关注标签，开始关注你感兴趣的内容，该标签下的优质文章将在本页展示</string>
+    <string name="cancel">取消</string>
+    <string name="character_counter_pattern">%1$d/%2$d</string>
+    <string name="dialog_button_replace_category_name">替换%1$s</string>
+    <string name="dialog_content_special_show">首页只能设置2个特别展示，如需修改，请替换其中一个。</string>
+    <string name="gold_rank">掘金排名</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="loading_tips">无法连接网络，请检查网络是否连接正常</string>
+    <string name="menu_pop_hide_in_home">取消首页显示</string>
+    <string name="menu_pop_show_in_home">设为首页显示</string>
+    <string name="pay_attention_tags">关注标签</string>
+    <string name="settings">设置</string>
+    <string name="title_activity_category">分类浏览</string>
+    <string name="title_activity_personal_home_page">PersonalHomePageActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffefefef"
+    android:fadingEdgeLength="0.0px"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/line_horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginTop="10.0dip" />
+
+            <RelativeLayout
+                android:id="@+id/layout_user_info"
+                android:layout_width="fill_parent"
+                android:layout_height="100.0dip"
+                android:background="@drawable/layout_selector">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_avatar"
+                    android:layout_width="50.0dip"
+                    android:layout_height="50.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18.0dip"
+                    android:src="@drawable/empty_avatar_user"
+                    app:civ_border_color="#ffeeeeee"
+                    app:civ_border_width="0.0dip" />
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="200.0dip"
+                    android:layout_height="28.0dip"
+                    android:layout_marginLeft="18.0dip"
+                    android:layout_marginTop="25.0dip"
+                    android:layout_toRightOf="@id/iv_avatar"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="登录/注册"
+                    android:textColor="@color/black"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:layout_width="200.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_below="@id/tv_username"
+                    android:layout_marginLeft="18.0dip"
+                    android:layout_toRightOf="@id/iv_avatar"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="添加职位 @ 添加公司"
+                    android:textColor="#ff777f88"
+                    android:textSize="14.0sp" />
+
+                <ImageView
+                    android:layout_width="10.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip"
+                    android:src="@drawable/profile_arrow" />
+
+                <View
+                    android:layout_width="8.0dip"
+                    android:layout_height="8.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="68.0dip"
+                    android:layout_marginRight="30.0dip"
+                    android:layout_marginTop="30.0dip"
+                    android:background="@drawable/red_point"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <include layout="@layout/include_user_shadow" />
+
+            <include
+                layout="@layout/line_horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginTop="13.0dip" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="52.0dip"
+                android:background="@drawable/layout_selector"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_toLeftOf="@+id/tv_share_count"
+                    android:drawableLeft="@drawable/user_share_entry"
+                    android:drawablePadding="20.0dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20.0dip"
+                    android:text="分享文章"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@id/tv_share_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20.0dip"
+                    android:gravity="center|right"
+                    android:text="99篇"
+                    android:textColor="#ffcacaca"
+                    android:textSize="14.0sp" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="52.0dip"
+                android:background="@drawable/layout_selector">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_toLeftOf="@+id/tv_collection_count"
+                    android:drawableLeft="@drawable/user_collection"
+                    android:drawablePadding="20.0dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20.0dip"
+                    android:text="我的收藏"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@id/tv_collection_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20.0dip"
+                    android:gravity="center|right"
+                    android:text="99篇"
+                    android:textColor="#ffcacaca"
+                    android:textSize="14.0sp" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="52.0dip"
+                android:background="@drawable/layout_selector">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_toLeftOf="@+id/tv_read_count"
+                    android:drawableLeft="@drawable/view"
+                    android:drawablePadding="20.0dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20.0dip"
+                    android:text="阅读过的文章"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@id/tv_read_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20.0dip"
+                    android:gravity="center|right"
+                    android:text="99篇"
+                    android:textColor="#ffcacaca"
+                    android:textSize="14.0sp" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="52.0dip"
+                android:background="@drawable/layout_selector">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_toLeftOf="@+id/tv_tag_count"
+                    android:drawableLeft="@drawable/tag"
+                    android:drawablePadding="20.0dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20.0dip"
+                    android:text="标签管理"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@id/tv_tag_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20.0dip"
+                    android:gravity="center|right"
+                    android:text="99篇"
+                    android:textColor="#ffcacaca"
+                    android:textSize="14.0sp" />
+            </RelativeLayout>
+
+            <include layout="@layout/include_user_shadow" />
+
+            <include
+                layout="@layout/line_horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginTop="13.0dip" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="52.0dip"
+                android:background="@drawable/layout_selector">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:drawableLeft="@drawable/user_chart"
+                    android:drawablePadding="20.0dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20.0dip"
+                    android:text="@string/gold_rank"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp" />
+
+                <View
+                    android:layout_width="8.0dip"
+                    android:layout_height="8.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="135.0dip"
+                    android:background="@drawable/red_point"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20.0dip"
+                    android:gravity="center|right"
+                    android:textColor="#ffcacaca"
+                    android:textSize="14.0sp" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_horizontal" />
+
+            <RelativeLayout
+                android:id="@+id/layout_setting"
+                android:layout_width="fill_parent"
+                android:layout_height="52.0dip"
+                android:background="@drawable/layout_selector">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:drawableLeft="@drawable/settings"
+                    android:drawablePadding="20.0dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20.0dip"
+                    android:text="@string/settings"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp" />
+            </RelativeLayout>
+
+            <include layout="@layout/include_user_shadow" />
+        </LinearLayout>
+
+        <include layout="@layout/include_user_shadow" />
+    </FrameLayout>
+</ScrollView>

@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.1.0'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+    }
+}
+android {
+    compileSdkVersion 23
+    buildToolsVersion '24.0.0 rc4'
+
+    defaultConfig {
+        applicationId "com.myf.fangjuejing"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    //apt 'com.jakewharton:butterknife-compiler:8.0.1'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.ogaclejapan.smarttablayout:library:1.6.1@aar'
+    compile 'com.afollestad.material-dialogs:core:0.8.5.9'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.github.myfdeveloper:PagerSlidingTabStripEx:v0.3'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.kyleduo.switchbutton:library:1.4.0'
+    compile 'com.daimajia.numberprogressbar:library:1.2@aar'
+}

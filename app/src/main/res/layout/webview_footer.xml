@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="49.0dip"
+    android:background="@color/white">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2.0px"
+        android:layout_alignParentTop="true"
+        android:background="#ffe0e0e0" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/action_collect_wrapper"
+        android:background="?android:selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="15.0dip"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:text="查看评论"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="4.0dip"
+            android:gravity="center_vertical"
+            android:text="0"
+            android:textSize="15.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/action_collect_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="48.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="?android:selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center|right"
+        android:orientation="horizontal"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="15.0dip">
+
+        <ImageView
+            android:id="@+id/action_collect"
+            android:layout_width="28.0dip"
+            android:layout_height="48.0dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_action_favorite_outline" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="4.0dip"
+            android:gravity="center_vertical"
+            android:text="0"
+            android:textSize="15.0sp" />
+    </LinearLayout>
+</RelativeLayout>

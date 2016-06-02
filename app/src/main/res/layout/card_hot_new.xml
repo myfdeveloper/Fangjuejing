@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card"
+    android:layout_width="fill_parent"
+    android:layout_height="85.0dip"
+    android:background="#ffffffff"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <View
+        style="@style/Divider"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="?android:selectableItemBackground" />
+
+    <ImageView
+        android:id="@+id/screenshot"
+        android:layout_width="60.0dip"
+        android:layout_height="60.0dip"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12.0dip"
+        android:layout_marginRight="16.0dip"
+        android:layout_marginTop="12.0dip"
+        android:layout_toRightOf="@id/screenshot"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lineSpacingMultiplier="1.1"
+        android:maxLines="2"
+        android:minHeight="32.0dip"
+        android:textColor="?titleColor"
+        android:textSize="17.0sp" />
+
+    <include
+        layout="@layout/card_hot_new_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/title"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginLeft="12.0dip"
+        android:layout_marginRight="15.0dip"
+        android:layout_marginTop="2.0dip"
+        android:layout_toRightOf="@id/screenshot"
+        android:maxHeight="30.0dip" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.30000007dip"
+        android:background="@color/main_list_color" />
+</RelativeLayout>

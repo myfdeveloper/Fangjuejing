@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="actionNormalColor" format="reference|color" />
+    <attr name="dateTimeColor" format="reference|color" />
+    <attr name="blueTextSelector" format="reference|color" />
+    <attr name="contentColor" format="reference|color" />
+    <attr name="contentColorLight" format="reference|color" />
+    <attr name="titleColor" format="reference|color" />
+    <attr name="backgroundTint" format="color" />
+    <attr name="recyclerview_style" format="reference" />
+    <attr name="textBackgroundSelector" format="reference" />
+    <attr name="toolbarNormalColor" format="reference|color" />
+
+    <declare-styleable name="TintableImageView">
+        <attr name="tint" format="reference|color" />
+    </declare-styleable>
+</resources>

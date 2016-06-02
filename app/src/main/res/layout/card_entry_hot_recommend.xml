@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_entry"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="15.0dip"
+        android:background="@color/main_list_color" />
+
+    <ImageView
+        android:id="@+id/screenshot"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/screenshot_height"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:background="?android:selectableItemBackground"
+        android:paddingLeft="15.0dip">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="100.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6.0dip"
+            android:layout_toLeftOf="@+id/tv_refresh"
+            android:drawableLeft="@mipmap/ic_hot_home"
+            android:drawablePadding="6.0dip"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="热门推荐"
+            android:textColor="@color/juejin_blue"
+            android:textSize="14.0sp" />
+
+        <ImageView
+            android:id="@id/tv_refresh"
+            android:layout_width="40.0dip"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@+id/rl_close"
+            android:scaleType="centerInside"
+            android:src="@drawable/refresh_icon" />
+
+        <RelativeLayout
+            android:id="@+id/rl_close"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:layout_alignParentRight="true"
+            android:background="?android:selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_hot_home_close" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/item_entry_hot" />
+
+        <include layout="@layout/item_entry_hot" />
+
+        <include layout="@layout/item_entry_hot" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="15.0dip"
+            android:background="@color/main_list_color" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5.0px"
+            android:background="@drawable/shadow_line_webview_top" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="juejin_blue">#ff007fff</color>
+    <color name="juejin_blue_button_press">#ff0076e6</color>
+    <color name="juejin_orange">#ffff8900</color>
+    <color name="main_list_color">#ffefeff1</color>
+    <color name="comment_background">#fff4f6f9</color>
+    <color name="colorAccent">#ffffffff</color>
+    <color name="blue">#ff4285f4</color>
+    <color name="gray_text">#ffa8b2bd</color>
+    <color name="black">#ff000000</color>
+    <color name="gray_text_light">#63a8b2bd</color>
+    <color name="dove_gray">#ff666666</color>
+    <color name="status_bar">#ff0072e5</color>
+    <color name="theme_primary">@color/juejin_blue</color>
+    <color name="theme_primary_dark">@color/black</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="icon_enabled">#FFFFFFFF</color>
+    <color name="icon_disabled">#88007fff</color>
+</resources>

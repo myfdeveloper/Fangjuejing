@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:background="#ffffffff">
+
+
+        <ImageView
+            android:id="@+id/iv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="?android:selectableItemBackground"
+            android:gravity="center"
+            android:paddingLeft="14.0dip"
+            android:paddingRight="14.0dip"
+            android:src="@drawable/tab_add"
+            android:textColor="#ffa8b2bd"
+            android:textSize="14.0sp" />
+
+        <com.myf.PagerSlidingTabStripEx
+            android:id="@+id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@id/iv_category"
+            android:background="#ffffffff"
+            app:pstsIndicatorColor="@color/blue"
+            app:pstsIndicatorHeight="2dip"
+            app:pstsShouldExpand="false"
+            app:pstsTabPaddingLeftRight="20.0dip"
+            app:pstsTextAllCaps="false"
+            app:pstsTextColor="@color/gray_text"
+            app:pstsTextSize="@dimen/md_button_textsize"
+            app:pstsTextSelectColor="@color/blue"/>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_child"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>

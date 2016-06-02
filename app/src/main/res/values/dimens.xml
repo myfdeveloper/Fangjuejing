@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16.0dip</dimen>
+    <dimen name="screenshot_height">140.0dip</dimen>
+    <dimen name="circular_progress_border">4.0dip</dimen>
+</resources>

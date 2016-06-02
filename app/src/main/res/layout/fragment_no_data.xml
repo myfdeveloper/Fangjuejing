@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/pager_page"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview_content"
+                style="?recyclerview_style"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <include layout="@layout/include_fragment_shadow" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="100.0dip">
+
+        <android.support.v4.widget.ContentLoadingProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/loading_tips"
+            android:layout_width="180.0dip"
+            android:layout_height="180.0dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20.0dip"
+            android:layout_marginTop="100.0dip"
+            android:drawableTop="@drawable/logo_gray"
+            android:gravity="center"
+            android:text="@string/loading_tips"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="120.0dip"
+            android:layout_height="52.0dip"
+            android:layout_below="@id/loading_tips"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/custom_next_button_selector"
+            android:gravity="center"
+            android:text="重试"
+            android:textColor="@color/white"
+            android:textSize="17.0sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/no_attention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="68.0dip"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_attention"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_gray" />
+
+            <TextView
+                android:id="@+id/tv_attention_tips"
+                android:layout_width="285.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.2"
+                android:text="@string/attention_tip"
+                android:textColor="#ffbfc7cf"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/bt_attention_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18.0dip"
+                android:background="@drawable/user_no_data"
+                android:paddingBottom="8.0dip"
+                android:paddingLeft="16.0dip"
+                android:paddingRight="16.0dip"
+                android:paddingTop="8.0dip"
+                android:text="@string/pay_attention_tags"
+                android:textColor="@color/blue"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

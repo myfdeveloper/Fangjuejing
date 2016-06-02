@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="41.0dip"
+    android:background="#ffffefef"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:drawableLeft="@drawable/internet_connect"
+            android:drawablePadding="12.0dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="16.0dip"
+            android:text="网络不可用,请检查网络设置"
+            android:textColor="@color/black"
+            android:textSize="14.0sp" />
+
+        <ImageView
+            android:layout_width="40.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:scaleType="center"
+            android:src="@mipmap/ic_hot_home_close" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shadow_line_webview_top" />
+</FrameLayout>
